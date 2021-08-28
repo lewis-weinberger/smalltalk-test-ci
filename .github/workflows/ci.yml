@@ -12,7 +12,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install GNU Smalltalk
-      run: sudo apt-get install gnu-smalltalk
+      run: |
+        sudo apt-get install gnu-smalltalk
+        gst --version
     - name: install
       run: sudo make install
     - name: tests

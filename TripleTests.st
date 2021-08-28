@@ -9,32 +9,32 @@ TestCase subclass: TripleTest [
     TestAdd [
         | c |
         c := a + b.
-        self assert: (c x) equals: 5.
-        self assert: (c y) equals: 7.
-        self assert: (c z) equals: 9.
+        self assert: (c x) = 5.
+        self assert: (c y) = 7.
+        self assert: (c z) = 9.
     ]
 
     TestMultiply [
         | c |
         c := a * b.
-        self assert: (c x) equals: 4.
-        self assert: (c y) equals: 10.
-        self assert: (c z) equals: 18.
+        self assert: (c x) = 4.
+        self assert: (c y) = 10.
+        self assert: (c z) = 18.
     ]
 
     TestSubtract [
         | c |
         c := a - b.
-        self assert: (c x) equals: -3.
-        self assert: (c y) equals: -3.
-        self assert: (c z) equals: -3.
+        self assert: (c x) = -3.
+        self assert: (c y) = -3.
+        self assert: (c z) = -3.
     ]
 
     TestDivide [
         | c |
         c := a / b.
-        self assert: (c x) equals: (1/4).
-        self assert: (c y) equals: (2/5).
-        self assert: (c z) equals: (1/2).
+        self assert: (c x) = (1/4).
+        self assert: (c y) = (2/5).
+        self assert: (c z) = (1/2).
     ]
 ]
