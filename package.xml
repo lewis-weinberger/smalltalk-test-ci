@@ -1,0 +1,12 @@
+<package>
+  <name>Triple</name>
+  <namespace>Triple</namespace>
+  <url>https://github.com/lewis-weinberger/smalltalk-test-ci.git</url>
+
+  <test>
+    <sunit>Triple.TripleTest</sunit>
+    <filein>TripleTests.st</filein>
+  </test>
+
+  <filein>Triple.st</filein>
+</package>
