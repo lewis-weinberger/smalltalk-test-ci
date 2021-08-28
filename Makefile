@@ -1,6 +1,6 @@
 PREFIX ?= /usr/local
 
-install: package.xml stlox
+install: package.xml
 	gst-package package.xml
 	gst-load -i Triple
 
