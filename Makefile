@@ -1,10 +1,10 @@
 PREFIX ?= /usr/local
 
-test:
-	gst-sunit -v --package=package.xml
-
 install: package.xml stlox
 	gst-package package.xml
 	gst-load -i Triple
+
+test:
+	gst-sunit -v -p Triple
 
 .PHONY: install test
